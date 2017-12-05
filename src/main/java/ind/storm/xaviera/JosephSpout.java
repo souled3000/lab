@@ -29,6 +29,10 @@ import org.apache.storm.tuple.Values;
 import org.apache.storm.utils.Utils;
 
 public class JosephSpout extends BaseRichSpout {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	SpoutOutputCollector _collector;
 	Random _rand;
 
@@ -36,7 +40,9 @@ public class JosephSpout extends BaseRichSpout {
 		_collector = collector;
 		_rand = new Random();
 	}
-
+/**
+ * id|mac|device_type|flag(0:on line;1:off line)|date and hour
+ */
 	public void nextTuple() {
 		Utils.sleep(100);
 		String[] sentences = new String[] {

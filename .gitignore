@@ -1,0 +1,7 @@
+glovanna
+/target
+*/target
+# Eclipse project files
+.project
+.classpath
+.settings
